@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- for SEO purpose -->
+    <meta name="description" content="Product review card for Gabrielle Essence Eau De Parfum by CHANEL." />
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- Google Fonts: Montserrat + Fraunces in a single request -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Product Review Card - Frontend Mentor</title>
+</head>
+<body>
+    <main class="review-card">
+        <picture class="review-card-img">
+        <!-- When the screen is 600px or less, show this image -->
+        <source media="(max-width: 600px)" srcset="image-product-mobile.jpg"/>
+            <img src="image-product-desktop.jpg" alt="image-product-desktop"/>
+        </picture>
+
+        <!-- Product details -->
+        <section class="review-card-content">
+            <div class="review-card-description">
+                <p id="category">PERFUME</p>
+                <h1>Gabrielle Essence Eau De Parfum</h1>
+                <p>A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator for the House of CHANEL.</p>
+            </div>
+            <div class="review-card-pricing">
+                <p class="price">$149.99 <del>$169.99</del></p>
+                <button><img src="icon-cart.svg" alt="" aria-hidden: "true" />Add to Cart</button>
+            </div>
+        </section>
+        </main>
+</body>
+</html>
